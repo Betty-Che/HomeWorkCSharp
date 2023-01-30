@@ -39,26 +39,20 @@ while (isWork)
                     int b = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Введите значение c: ");
                     int c = Convert.ToInt32(Console.ReadLine());
-                    int max = a;
 
-                    if (b > max)
+                    if (a > b && a > c)
                     {
-                        max = b;
+                        Console.WriteLine("Максимальное число:" + a);
                     }
-                    else
+                    else if (b > a && b > c)
                     {
-                        max = a;
+                        Console.WriteLine("Максимальное число:" + b);
                     }
-                    if (c > max)
+                    else if (c > a && c > b)
                     {
-                        max = c;
-                    }
-                    else
-                    {
-                        max = a;
+                        Console.WriteLine("Максимальное число:" + c);
                     }
 
-                    Console.WriteLine("max = " + max);
                     break;
                 }
             case 3: //Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
