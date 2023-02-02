@@ -106,10 +106,5 @@ while (isWork)
                 break;
         }
 
-
-
-
-
-
     }
 }
