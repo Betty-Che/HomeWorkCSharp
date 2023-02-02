@@ -105,26 +105,38 @@
 
 //Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
 
-while (true)
+// while (true)
+// {
+//     Point p1 = new Point(1, 2);
+//     Point p2 = new Point(3, 4); 
+//     Console.WriteLine(p1.GetLegth(p2));
+// }
+
+// class Point 
+// {
+//     public int _x; 
+//     public int _y;
+//     public Point(int x, int y)
+//     {
+//         _x = x;
+//         _y = y;
+
+//     }
+
+//     public double GetLegth(Point p)
+//     {
+//         return Math.Sqrt(Math.Pow(this._x-p._x, 2) + (Math.Pow(this._y-p._y, 2)));
+//     }
+// }
+
+Console.Write("Введите число N: ");
+int i = 1;
+
+while (int.TryParse(Console.ReadLine(), out int n))
 {
-    Point p1 = new Point(1, 2);
-    Point p2 = new Point(3, 4); 
-    Console.WriteLine(p1.GetLegth(p2));
-}
-
-class Point 
-{
-    public int _x; 
-    public int _y;
-    public Point(int x, int y)
+    while (i <= n)
     {
-        _x = x;
-        _y = y;
-
-    }
-
-    public double GetLegth(Point p)
-    {
-        return Math.Sqrt(Math.Pow(this._x-p._x, 2) + (Math.Pow(this._y-p._y, 2)));
+        Console.WriteLine(Math.Pow(i, 2));
+        i ++;
     }
 }
