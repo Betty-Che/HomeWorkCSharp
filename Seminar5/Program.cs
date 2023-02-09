@@ -67,9 +67,9 @@ int [] array = GetRandomArray(5, -9, 9);
 int number = -3;
 if(FindNumber(array, number))
 {
-    System.Console.WriteLine($"{string.Join(" ", array)} Да");
+    System.Console.WriteLine($"{string.Join(", ", array)} Да");
 }
-else System.Console.WriteLine($"{string.Join(" ", array)} Нет");
+else System.Console.WriteLine($"{string.Join(", ", array)} Нет");
 
 bool FindNumber(int[] array, int number)
 {
