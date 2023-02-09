@@ -18,20 +18,24 @@ while (isWork)
                 }
             case 2: // Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
                 {
-                    Console.Write("Введите трехзначное число: ");
+                    Console.WriteLine("Введите трехзначное число: ");
                     int randomNum = int.Parse(Console.ReadLine());
-                    int thirdNum = int.Parse(Console.ReadLine());
+                    int result = 0;
 
-                    // if (num > 100)
-                    // {
-
-                    // }
-
-                    if (randomNum < 100)
+                    while (randomNum > 999)
                     {
-                        Console.WriteLine("Третьей цифры нет");
+                        randomNum = randomNum / 10;
                     }
-                    break;
+                    result = randomNum % 10;
+
+                    System.Console.WriteLine(result);
+                    if (randomNum < 99)
+                    {
+                        System.Console.WriteLine("Третьей цифры нет");
+                    }
+
+
+                     break;
                 }
             case 3: //Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
                 {
